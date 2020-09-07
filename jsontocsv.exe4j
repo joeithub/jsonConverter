@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="7.0" transformSequenceNumber="3">
+  <directoryPresets config="D:/tong/MY/jsontocsv" />
+  <application name="jsontocsv" distributionSourceDir="C:/Users/tongq/Desktop" />
+  <executable name="jsontocsv" wrapperType="embed" iconSet="true" iconFile="D:/tong/MY/jsontocsv/favicon.ico" executableDir="." executableMode="gui" singleInstance="true" />
+  <java mainClass="Converter" vmParameters="-Xmx256m" minVersion="1.8" maxVersion="1.8" allowBetaVM="true">
+    <classPath>
+      <archive location="D:/tong/MY/jsontocsv/target/jsontocsv-0.0.1-SNAPSHOT.jar" failOnError="false" />
+      <archive location="D:/tong/develop/repository/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar" failOnError="false" />
+      <archive location="D:/tong/develop/repository/org/json/json/20160810/json-20160810.jar" failOnError="false" />
+      <archive location="D:/tong/develop/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar" failOnError="false" />
+      <archive location="D:/tong/develop/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar" failOnError="false" />
+      <archive location="D:/tong/develop/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar" failOnError="false" />
+    </classPath>
+  </java>
+</exe4j>
