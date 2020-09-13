@@ -20,24 +20,24 @@ public class Converter {
         public static void main(String[] args) {
             Frame f = new Frame("JSON TO CSV TOOL ");
 
-            f.setBounds(400, 200, 400, 400);
+            f.setBounds(400, 200, 400, 440);
             //选择布局方式
             f.setLayout(new FlowLayout());
 
             //创建文本框
-            TextField tf = new TextField(49);
+            TextField tf = new TextField(48);
 
-            TextField notice = new TextField(49);
+            TextField notice = new TextField(48);
 
             notice.setEditable(false);
             notice.setFocusable(false);
 
             //创建按钮
             Button bu = new Button("Convert Single File");
-            Button all = new Button("Convert All JSON Files TO ONE");
+            Button all = new Button("Convert All JSON File TO ONE");
 
             //创建文本域
-            TextArea ta = new TextArea("",15, 50,TextArea.SCROLLBARS_NONE);
+            TextArea ta = new TextArea("",20, 49,TextArea.SCROLLBARS_NONE);
             ta.setEditable(false);
             ta.setFocusable(false);
 
@@ -54,20 +54,19 @@ public class Converter {
                                 "作者： 童峤\n" +
                                 "使用： 输入json 文件所在目录地址，csv 文件会生成到同目录下\n" +
                                 "注意： 当前仅支持一层json 转换为csv,不支持复杂嵌套结构\n"  +
-                                "示例： 单个对象 或 对象数组\n" +
+                                "示例：\n" +
                                 "[\n" +
                                 "      {\n" +
                                 "        \"_index\" : \"res-filebeat-2020.06.18\",\n" +
                                 "        \"url\" : \"edu.cn/jsxsd/css/images/up.png\",\n" +
                                 "        \"account\" : \"1171413527\"\n" +
-                                "      }\n" +
+                                "      },\n" +
+                                "      {\n" +
+                                "        \"_index\" : \"res-filebeat-2020.06.18\",\n" +
+                                "        \"url\" : \"edu.cn/jsxsd/xspj/xspj_find.do\",\n" +
+                                "        \"account\" : \"1171413527\"\n" +
+                                "      }\n"+
                                 "]\n"+
-                                "============================================================\n"+
-                                "{\n" +
-                                "    \"_index\" : \"res-filebeat-2020.06.18\",\n" +
-                                "    \"url\" : \"edu.cn/jsxsd/xspj/xspj_find.do\",\n" +
-                                "    \"account\" : \"1171413527\"\n" +
-                                "}\n"+
                                 "************************ 2020-09-03 ************************";
             ta.setText(state);
             notice.setText("请输入文件夹路径");
